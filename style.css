@@ -1,6 +1,7 @@
 .header {
+  background-color: plum;
   text-align: center;
-  background-color: pink;
+  padding: 80px;
 }
 
 h1,
@@ -10,8 +11,64 @@ h4,
 h5,
 h6 {
   font-family: backdrop;
+  color: black;
+}
+body {
+  margin: 0;
 }
 
 * {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.nav-l {
+  padding: 5px;
+}
+.nav-l:hover {
+  color: black;
+  background-color: lightgray;
+  background-color: plum;
+}
+
+.nav-l:active {
+  color: white;
+  background-color: grey;
+  background-color: violet;
+}
+
+.main {
+  max-width: 10000px;
+  margin: 0 auto;
+
+  padding: 5px;
+}
+.main > * + * {
+  margin-top: 60px;
+}
+
+.main > * {
+  border-top: 2px solid plum;
+}
+
+.main > *:first-child {
+  border-top: none;
+}
+
+.profi::after {
+  content: "💻";
+}
+
+.footer {
+  margin-top: 3rem;
+  background-color: plum;
+  padding: 2rem;
+}
+
+.footer-text {
+  text-align: center;
+  margin: 0;
+}
+
+.footer-link {
+  color: black;
 }
